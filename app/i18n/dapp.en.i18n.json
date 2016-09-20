@@ -1,10 +1,10 @@
 {
 	"dapp": {
 		"app": {
-			"title": "My Ethereum ÐApp"
+			"title": "Interspace Blockchain Access"
 			, "buttons": {
-				"view1": "View1"
-				, "view2": "View2"
+				"view1": "Credentials"
+				, "view2": "Access"
 			}
 			, "headers": {
 				"identicon": "Identicon"
@@ -20,16 +20,16 @@
 				, "mining": "Mining"
 				, "gasPrice": "Gas Price"
 			}
-			, "copyright": "Copyright © My Ethereum ÐApp 2015. All Rights Reserved"
+			, "copyright": "Copyright © Blocksense 2015. All Rights Reserved"
 		}
 		, "components": {
 			"balance": {
-				"header": "My Balance"
-				, "original": "Original Balance"
+				"header": "MAccess tokens"
+				, "original": "Thsi round"
 			}
 			, "accounts": {
 				"header": "My Accounts"
-				, "description": "These are your Ethereum addresses. The identicons are generated based on the address value. Note, balance is static."			
+				, "description": "These are your regstered addresses. that have access to the ecosystne The identicons are generated based on the address value. Note, balance is static."			
 			}
 			, "multiplyContract": {
 				"header": "Multiply Contract"
@@ -43,12 +43,12 @@
 			}
 		}
 		, "view1": {
-			"title": "View 1"
-			, "defaultName": "View1"
+			"title": "Credentials"
+			, "defaultName": "Credentials"
 		}
 		, "view2": {
-			"title": "View 2"
-			, "defaultName": "View2"
+			"title": "Access"
+			, "defaultName": "Access"
 		}
 	}
 }
