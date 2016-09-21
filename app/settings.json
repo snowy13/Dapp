@@ -2,8 +2,8 @@
     "production": {
         "geth": {
             "rpc": "",
-            "rpcaddr": "localhost",
-            "rpcport": 8545,
+            "rpcaddr": "192.168.99.101/rpc",
+            "rpcport": 1337,
             "rpccorsdomain": "*",
             "unlock": 0,
             "verbosity": 5,
@@ -18,8 +18,8 @@
     "development": {
         "geth": {
             "rpc": "",
-            "rpcaddr": "localhost",
-            "rpcport": 8545,
+            "rpcaddr": "192.168.99.101/rpc",
+            "rpcport": 1337,
             "rpccorsdomain": "*",
             "genesis": "test-genesis.json",
             "verbosity": 5,
