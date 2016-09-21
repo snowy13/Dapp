@@ -3,9 +3,11 @@
 		"app": {
 			"title": "Interspace Blockchain Access"
 			, "buttons": {
-				"view1": "Credentials"
+				"view1": "Blockchain"
 				, "view2": "Access"
 				, "view3": "Saflok"
+				, "view4": "Welcome"
+				, "view5": "Identity"
 			}
 			, "headers": {
 				"identicon": "Identicon"
@@ -46,13 +48,27 @@
 				, "deployed": "The contract was deployed to this address"
 				, "placeholder": "Saflok Key"
 			}
+			, "identityContract": {
+				"header": "Identity Contract"
+				, "description": "Create an identity that will be registered on the blockchain."
+				, "create": "Create Identity"
+				, "deployed": "The contract was deployed to this address"
+				, "placeholder": "Identity"
+			}
+			, "welcome": {
+				"header": "Welcome"
+				, "description": "Interspace access management"
+				, "create": "Start"
+				, "deployed": "Here we go"
+				, "placeholder": "Going"
+			}
 			, "networkHealth": {
 				"header": "Network Health"			
 			}
 		}
 		, "view1": {
 			"title": "Credentials"
-			, "defaultName": "Credentials"
+			, "defaultName": "Blockchain"
 		}
 		, "view2": {
 			"title": "Access"
@@ -61,6 +77,14 @@
 		, "view3": {
 			"title": "Saflok"
 			, "defaultName": "Saflok"
+		}
+		, "view4": {
+			"title": "Welcome"
+			, "defaultName": "Welcome"
+		}
+		, "view5": {
+			"title": "Identity"
+			, "defaultName": "Identity"
 		}
 	}
 }

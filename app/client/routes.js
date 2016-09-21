@@ -34,7 +34,7 @@ The receive route, showing the wallet overview
 
 // Default route
 Router.route('/', {
-    template: 'views_view1',
+    template: 'views_view4',
     name: 'home'
 });
 
@@ -53,4 +53,16 @@ Router.route('/view2', {
 Router.route('/view3', {
     template: 'views_view3',
     name: 'view3'
+});
+
+// Route for view4
+Router.route('/view4', {
+    template: 'views_view4',
+    name: 'view4'
+});
+
+// Route for view5
+Router.route('/view5', {
+    template: 'views_view5',
+    name: 'view5'
 });
