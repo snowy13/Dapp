@@ -49,7 +49,14 @@ Template['components_multiplyContract'].events({
 	
 	@event (click .btn-default)
 	*/
+    "click .btn-default":function () {
+        TemplateVar.set('state', {isMining: true});
+        Meteor.call('postCredentials',function(err, response) {
+            console.log(response);
+        });
+           }
 
+    /*
 	"click .btn-default": function(event, template){ // Create Contract
         TemplateVar.set('state', {isMining: true});
         
@@ -84,11 +91,7 @@ Template['components_multiplyContract'].events({
 	},
 
     
-	/**
-	On Multiply Number Input keyup
 	
-	@event (keyup #multiplyValue)
-	*/
 
 	"keyup #multiplyValue": function(event, template){
         // the input value
@@ -103,5 +106,5 @@ Template['components_multiplyContract'].events({
                 TemplateVar.set(template, 'multplyResult'
                                 , String(err));
         });
-	},
+	}, */
 });

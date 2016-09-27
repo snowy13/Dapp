@@ -43,3 +43,5 @@ ejson
 spacebars
 check
 silentcicero:solc
+http
+ecmascript
