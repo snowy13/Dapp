@@ -4,9 +4,10 @@ Meteor.startup(function () {
 	  Meteor.methods({
 	    postCredentials: function () {
 		     console.log('Called credentials contract');
+             console.log('Credentials: true');
 		     HTTP.call('POST',
-                   'http://localhost:3080/deals' , {
-                        data: {"id": "234232", "buyer": "Mike", "seller": "Laura", "amount": 23984},
+                   'http://localhost:3080/credentials' , {
+                        data: {"hasCredentials": true},
                         headers: { 'Content-Type': 'application/json'}
                         },
                     function(error, result) {

@@ -2,11 +2,12 @@
 
 Meteor.startup(function () {
 	  Meteor.methods({
-	    postIdentity: function () {
+	    postIdentity: function (name) {
 		     console.log('Called identity contract');
+         console.log('Name: '+ name);
 		     HTTP.call('POST',
-                   'http://localhost:3080/deals' , {
-                        data: {"id": "234232", "buyer": "Mike", "seller": "Laura", "amount": 23984},
+                   'http://localhost:3080/identity' , {
+                        data: {"name": name},
                         headers: { 'Content-Type': 'application/json'}
                         },
                     function(error, result) {

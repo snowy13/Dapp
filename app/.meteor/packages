@@ -45,3 +45,5 @@ check
 silentcicero:solc
 http
 ecmascript
+autopublish
+insecure

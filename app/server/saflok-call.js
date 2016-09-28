@@ -2,11 +2,12 @@
 
 Meteor.startup(function () {
 	  Meteor.methods({
-	    postSaflok: function () {
+	    postSaflok: function (checkoutDate, checkoutTime, room) {
 		     console.log('Called saflok contract');
+             console.log('Date: '+ checkoutDate + ' Time: ' + checkoutTime + ' Room: ' + room);
 		     HTTP.call('POST',
-                   'http://localhost:3080/deals' , {
-                        data: {"id": "Jim", "buyer": "Mike", "seller": "Laura", "amount": 23984},
+                   'http://localhost:3080/saflok' , {
+                        data: {"expiryDate": checkoutDate, "expiryTime": checkoutTime, "room": room},
                         headers: { 'Content-Type': 'application/json'}
                         },
                     function(error, result) {
